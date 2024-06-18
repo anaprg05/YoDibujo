@@ -1,0 +1,393 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: monospace;
+}
+
+.contenedor
+{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo
+{
+    color: rgb(109,104,117);
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Bangers', cursive;
+}
+
+header
+{
+    width: 100%;
+    height: 600px;
+    background: #e1eec3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, hsla(359, 84%, 63%, 0.651), hsla(78, 56%, 85%, 0.651)), url(PORTADA.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, hsl(359, 84%, 63%), hsla(78, 56%, 85%, 0.37)), url(PORTADA.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav
+{
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    transition: all 0.5s ease;
+    background: rgba(223, 90, 101, 0.900);
+    position: fixed;
+}
+
+.logo
+{
+    width: 95px;
+    height: 95px;
+}
+
+.menu
+{
+    text-align: right;
+    display: flex;
+    padding-top: 12px;
+}
+
+.menu li
+{
+    list-style: none;
+    margin: 10px;
+    text-align: right;
+}
+
+.menu li a
+{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Anton', sans-serif;
+    position: relative;
+    text-align: right;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover
+{
+    padding: 5px 10px;
+    background: #fff;
+    color: black;
+    border-radius: 15px;
+}
+
+header .textos-header
+{
+    display: flex;
+    height: 630px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1
+{
+    font-family: 'Sigmar One', cursive;
+    font-size: 90px;
+    color: #fff;
+}
+
+.textos-header h2
+{
+    font-family: 'Indie Flower', cursive;
+    font-size: 35px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.contenedor-sobre-nosotros
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us
+{
+    width: 30rem;
+    height: 55rem;
+}
+
+.sobre-nosotros .contenido-textos
+{
+    width: 48%;
+}
+
+.contenido-textos h3
+{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span
+{
+    background: #E5989B;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0 .5);
+    margin-right: 5px;
+    padding-top: 5px;
+}
+
+.contenido-textos p
+{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    font-family: 'Kosugi Maru', sans-serif;
+    text-indent: 20px;
+}
+
+.contenido-parrafo p
+{
+    font-weight: 300;
+    text-align: center;
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 25px;
+}
+
+
+li
+{
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.portafolio
+{
+    background: #fff2ec;
+    
+}
+
+.galeria-port
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port
+{
+    width: 25rem;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0 .5);
+}
+
+.imagen-port > img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(348, 24%, 53%, 0.911);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hover-galeria img
+{
+    width: 50px;
+    margin: auto;
+}
+
+.hover-galeria p
+{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria
+{
+    transform: scale(1);
+}
+
+h2
+{
+    text-align: center;
+}
+
+#dibujo_1
+{
+    background-color: #ffeef0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#dibujo_2
+{
+    background-color: #ffeef0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#dibujo_3
+{
+    background-color: #ffeef0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#dibujo_4
+{
+    background-color: #ffeef0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#dibujo_5
+{
+    background-color: #ffeef0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#dibujo_6
+{
+    background-color: #ffeef0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#dibujo_7
+{
+    background-color: #ffeef0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#dibujo_8
+{
+    background-color: #ffeef0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#dibujo_9
+{
+    background-color: #ffeef0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#dibujo_10
+{
+    background-color: #ffeef0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.subtitulo
+{
+    text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #8c80a0;
+}
+
+
+.subtitulo_1
+{
+    color: #7c545d;
+    font-family: 'Nova Mono', monospace;
+    text-align: center;
+}
+
+h5
+{
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    color: #9b6c76;
+    font-size: 25px;
+}
+
+.col-lg-3 p
+{
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.tipos-de-dibujo
+{
+    width: 200px;
+}
+
+.col-lg-4 p
+{
+    font-family: 'Kosugi Maru', sans-serif;
+}
+
+.materiales_imagenes
+{
+    width: 300px;
+}
+
+.img_tiposdedibujos
+{
+    width: 300px;
+}
+
+.content-foo > a
+{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    transition: all 0.5s ease;
+}
+
+.content-foo > a:hover
+{
+    padding: 5px 10px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.hover-galeria > a
+{
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Bangers', cursive;
+}
+
+.hover-galeria > a:hover
+{
+    text-decoration: underline;
+}
