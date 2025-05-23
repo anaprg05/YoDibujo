@@ -50,6 +50,6 @@ graph TD
 
 🖌️ **Desarrollado con pasión por** 
 
-[![GitHub - anaprg05](https://img.shields.io/badge/GitHub-anaprg05-darkgreen?logo=github)](https://github.com/anaprg05)
+[![GitHub - anaprg05](https://img.shields.io/badge/GitHub-anaprg05-pink?logo=github)](https://github.com/anaprg05)
 
 *Última actualización: Mayo 2025*
